@@ -1,0 +1,46 @@
+.logo{
+    background-color: maroon;
+    height: 60px;
+    display: flex;
+}
+.logo p{
+    margin-left: 480px;
+    color: aliceblue;
+    font-size: 30px;
+}
+.search{
+    margin-left: 500px;
+    color: aliceblue;
+    margin-top: 25px;
+}
+.icons{
+    margin-left: 20px;
+    color: aliceblue;
+    margin-top: 25px;
+}
+a{
+    color: aliceblue;
+}
+.menu{
+    background-color: maroon;
+    height: 60px;
+    display: flex;
+    font-size: 30px;
+    justify-content: flex-end;
+
+}
+.menu a{
+    text-decoration: none;
+    padding:0px 15px;
+    
+}
+.menu a:hover{
+    color:hotpink
+}
+.logo img{
+    margin-top: 10px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
