@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/redux-search/2.5.0/redux-search.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ngCart/1.0.0/ngCart.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="mainpage.css">
+
+    <!-- <style>
+        .header{
+            background-color: maroon;
+            height: 60px;
+            display: flex;
+        }
+        
+        .icon{
+            color: aliceblue;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        .header p{
+            margin-left: 480px;
+            color: aliceblue;
+            font-size: 30px;
+        }
+        .search{
+            margin-left: 500px;
+            color: aliceblue;
+            margin-top: 25px;
+        }
+        .icons{
+            margin-left: 20px;
+            color: aliceblue;
+            margin-top: 25px;
+        }
+        
+        .footer{
+            background-color: maroon;
+            display: flex;
+            color: aliceblue;
+            font-size: 17px;
+        }
+        .first{
+            margin-left: 100px;
+            margin-top: 30px;
+        }
+        .first b{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .sym{
+            padding-left: 10px;
+        }
+        .second{
+            margin-left: 160px;
+            margin-top: 30px;
+            
+        }
+        .third{
+            margin-left: 200px;
+            margin-top: 30px;
+            
+        }
+        a{
+            color: aliceblue;
+        }
+        .fourth{
+            margin-left: 150px;
+            margin-top: 30px;
+        }
+        .mainfooter{
+            background-color: maroon;
+            height: 400px;
+            color: aliceblue;
+        }
+        hr{
+            color: aliceblue;
+            margin-left: 90px;
+            width: 1350px;
+        }
+        .end{
+            display: inline;
+            margin-left: 40px;
+           
+        }
+        .end a{
+            padding-left: 50px;
+            
+        }
+        .end p{
+            color: aliceblue;
+            float: right;
+        }
+        .menu{
+            background-color: maroon;
+            height: 60px;
+            display: flex;
+            font-size: 30px;
+            justify-content: flex-end;
+
+        }
+        a{
+            text-decoration: none;
+            padding:0px 15px;
+            
+        }
+        a:hover{
+            color:hotpink
+        }
+        .header img{
+            margin-top: 10px;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            margin-left: 20px;
+        }
+        .p1{
+            background-image: linear-gradient(rgba(196, 182, 238, 0.2),rgba(205, 188, 255, 0.4),rgba(205, 188, 255, 0.4)),url("https://img.freepik.com/premium-photo/glass-wine-winery-concept-background-garden-vineyards-soft-focus-generative-ai_73944-32240.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .product{
+            height: 500px;   
+            height: 25%;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            align-items: center;
+        }
+        .product img{
+            margin-top: 30px;
+            margin-bottom: 30px;
+            height: 200px;
+            width: 300px;
+            border-radius: 5px;  
+            
+        }
+        .d1{
+            margin-right: 20px;
+        }
+        .d3{
+            margin-left: 20px;
+        }
+        .d2{
+            order: -1;
+            margin-left: 20px;
+            font-size: 20px;
+        }
+        .d4{
+            margin-right: 20px;
+            font-size: 20px;
+        }
+        .items{
+            height: 600px;
+            display: grid;
+            grid-template: repeat(2,250px)/repeat(4,350px);
+            
+        }
+        .items img{
+            margin-top: 80px;
+            margin-left: 50px;
+            height: 200px;
+            width: 300px;
+            border-radius: 10px;
+        }
+        a:hover{
+            box-shadow:fuchsia;
+        }
+        .container-slideshow{
+            
+            position: relative;
+            max-width: 60rem;
+            margin: 0 auto;
+        }
+        .slider{
+            display: flex;
+            aspect-ratio: 16/9;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+        }
+        .slider img{
+            flex: 1 0 100%;
+            scroll-snap-align: start;
+            object-fit: cover;
+        }
+        .slider-nav{
+            display: flex;
+            column-gap: 1rem;
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translate(-50%);
+            z-index: 1;
+        }
+        .slider-nav a{
+            width: 0.5rem;
+            height: 0.5rem;
+            background-color: aliceblue;
+            opacity: 0.75;
+            transition: opacity ease 250ms;
+        }
+        .slider-nav a:hover{
+            opacity: 1;
+        }
+        
+        
+    </style> -->
+</head>
+<body>
+    <header>
+        <div class="header">
+        <img src="https://cdn.imgbin.com/13/20/8/imgbin-wine-label-logo-vintage-wine-label-material-0G0pCL7vZSvf13ApG5zfPsra1.jpg" alt="">
+        <!--<i class="fas fa-bars icon"></i>-->
+        <p>YOUR<b>WINE</b>STORE</p>
+        <i class="fa fa-search search"></i>
+        <i class="fa fa-cart-plus icons"></i>
+        <i class="fas fa-heart icons"></i>
+        <i class="fas fa-user icons"></i>
+    </div>
+    <div class="menu">
+        <a href="#product-list"><i>Home</i></a>
+        <a href="Product.html"><i>Products</i></a>
+        <a href="#footer"><i>Contact</i></a>
+        <a href=""><i>Signup</i></a>
+    </div>
+</header>
+<br>
+<div class="container-slideshow">
+    <div class="slider-wrapper">
+        <div class="slider">
+            <img src="https://cdn.pixabay.com/photo/2016/10/22/20/34/wines-1761613_640.jpg" alt="" id="slide1">
+            <img src="https://cdn.pixabay.com/photo/2017/08/30/10/02/wine-2696551_1280.jpg" alt="" id="slide2">
+            <img src="https://media.istockphoto.com/id/610860850/photo/man-harvesting-in-vineyard.jpg?s=2048x2048&w=is&k=20&c=AgByPQEbjBinNBV-ho8fsP2NKEtflrJNVUDwejHhiAU=" alt="" id="slide3">
+            <img src="https://cdn.pixabay.com/photo/2017/01/04/13/57/wine-1952051_1280.jpg" alt="" id="slide4">
+            <img src="https://cdn.pixabay.com/photo/2021/03/09/10/48/wine-6081517_640.jpg" alt="" id="slide5">
+            <img src="https://cdn.pixabay.com/photo/2018/01/12/09/45/glass-3077869_1280.jpg" alt="" id="slide6">
+        </div>
+    </div>
+    <div class="slider-nav">
+        <a href="#slide1"></a>
+        <a href="#slide2"></a>
+        <a href="#slide3"></a>
+        <a href="#slide4"></a>
+        <a href="#slide5"></a>
+        <a href="#slide6"></a>
+    </div>
+</div>
+<br>
+    <main>
+        <div class="shop-now">
+            <div class="main-heading"><p>Shop Wine</p></div>
+            <br>
+            <div class="product-list" id="product-list">
+                <div class="c1 card">
+                    <a href="Product.html"><div class="images"><img src="https://purepng.com/public/uploads/large/purepng.com-wine-bottlebottle-food-wine-object-drink-alcohol-beverage-941524620427wpunm.png" alt="p-1"></div></a>
+                    <div class="image-desc">
+                        <div class="price"><span>750ml&nbsp</span><span>|</span><span>$18</span></div> 
+                    </div>
+                    <div class="product-type">
+                        <p>Carmel Road</p>
+                        <p id="product_name">2023 California Sauvignon Blanc</p>
+                    </div>
+                    <div class="add-to-cart">
+                        <div class="count"><span>-</span><span>1</span><span>+</span></div>
+                        <div class="cart"><button>ADD TO CART</button></div>
+                    </div>
+                </div>
+                <div class="c2 card">
+                    <a href="Product.html"><div class="images"><img src="https://purepng.com/public/uploads/large/purepng.com-wine-bottlebottle-food-wine-object-alcohol-beverage-941524621678ds9t7.png" alt="p-2"></div></a>
+                    <div class="image-desc">
+                        <div class="price"><span>750ml&nbsp</span><span>|</span><span>$18</span></div> 
+                    </div>
+                    <div class="product-type">
+                        <p>Carmel Road</p>
+                        <p id="product_name">2023 California Sauvignon Blanc</p>
+                    </div>
+                    <div class="add-to-cart">
+                        <div class="count"><span>-</span><span>1</span><span>+</span></div>
+                        <div class="cart"><button>ADD TO CART</button></div>
+                    </div>
+                </div>
+                <div class="c3 card">
+                    <a href="Product.html"><div class="images"><img src="https://purepng.com/public/uploads/large/purepng.com-wine-bottlebottle-food-wine-object-alcohol-beverage-cocktail-liquor-whiskey-drunk-941524623252xmmwk.png" alt="p-3"></div></a>
+                    <div class="image-desc">
+                        <div class="price"><span>750ml&nbsp</span><span>|</span><span>$18</span></div> 
+                    </div>
+                    <div class="product-type">
+                        <p>Carmel Road</p>
+                        <p id="product_name">2023 California Sauvignon Blanc</p>
+                    </div>
+                    <div class="add-to-cart">
+                        <div class="count"><span>-</span><span>1</span><span>+</span></div>
+                        <div class="cart"><button>ADD TO CART</button></div>
+                    </div>
+                </div>
+                <div class="c4 card">
+                    <a href="Product.html"><div class="images"><img src="https://pngimg.com/uploads/wine/wine_PNG9461.png" alt="p-4"></div></a>
+                    <div class="image-desc">
+                        <div class="price"><span>750ml&nbsp</span><span>|</span><span>$18</span></div> 
+                    </div>
+                    <div class="product-type">
+                        <p>Carmel Road</p>
+                        <p id="product_name">2023 California Sauvignon Blanc</p>
+                    </div>
+                    <div class="add-to-cart">
+                        <div class="count"><span>-</span><span>1</span><span>+</span></div>
+                        <div class="cart"><button>ADD TO CART</button></div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div><a href="Product.html"><input type="submit" value="Best Sellers" class="prod-butt" ></a></div>
+            <br><br>
+            <div class="product-heading"><p>Wine Says Let's Share</p></div>
+            <br>
+            <div class="product-list">
+                <div class="c1 card">
+                    <a href="Product.html"><div class="images"><img src="https://www.pinclipart.com/picdir/big/30-308283_bottle-clipart-transparent-background-wine-bottle-and-glass.png" alt="p-1"></div></a>
+                    <div class="image-desc">
+                        <div class="price"><span>750ml&nbsp</span><span>|</span><span>$18</span></div> 
+                    </div>
+                    <div class="product-type">
+                        <p>Carmel Road</p>
+                        <p id="product_name">2023 California Sauvignon Blanc</p>
+                    </div>
+                    <div class="add-to-cart">
+                        <div class="count"><span>-</span><span>1</span><span>+</span></div>
+                        <div class="cart"><button>ADD TO CART</button></div>
+                    </div>
+                </div>
+                <div class="c2 card">
+                    <a href="Product.html"><div class="images"><img src="https://pngimg.com/uploads/wine/wine_PNG99043.png" alt="p-2"></div></a>
+                    <div class="image-desc">
+                        <div class="price"><span>750ml&nbsp</span><span>|</span><span>$18</span></div> 
+                    </div>
+                    <div class="product-type">
+                        <p>Carmel Road</p>
+                        <p id="product_name">2023 California Sauvignon Blanc</p>
+                    </div>
+                    <div class="add-to-cart">
+                        <div class="count"><span>-</span><span>1</span><span>+</span></div>
+                        <div class="cart"><button>ADD TO CART</button></div>
+                    </div>
+                </div>
+                <div class="c3 card">
+                    <a href="Product.html"><div class="images"><img src="https://www.pikpng.com/pngl/b/306-3067018_wine-bottle-transparent-png-clip-art-image-transparent.png" alt="p-3"></div></a>
+                    <div class="image-desc">
+                        <div class="price"><span>750ml&nbsp</span><span>|</span><span>$18</span></div> 
+                    </div>
+                    <div class="product-type">
+                        <p>Carmel Road</p>
+                        <p id="product_name">2023 California Sauvignon Blanc</p>
+                    </div>
+                    <div class="add-to-cart">
+                        <div class="count"><span>-</span><span>1</span><span>+</span></div>
+                        <div class="cart"><button>ADD TO CART</button></div>
+                    </div>
+                </div>
+                <div class="c4 card">
+                    <a href="Product.html"><div class="images"><img src="https://purepng.com/public/uploads/medium/purepng.com-sparkling-wine-from-a-bottlealcoholdrinksparling-winesparling-win-in-a-bottlebottle-23151933986597pxq.png" alt="p-4"></div></a>
+                    <div class="image-desc">
+                        <div class="price"><span>750ml&nbsp</span><span>|</span><span>$18</span></div> 
+                    </div>
+                    <div class="product-type">
+                        <p>Carmel Road</p>
+                        <p id="product_name">2023 California Sauvignon Blanc</p>
+                    </div>
+                    <div class="add-to-cart">
+                        <div class="count"><span>-</span><span>1</span><span>+</span></div>
+                        <div class="cart"><button>ADD TO CART</button></div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div><a href="Product.html"><input type="submit" value="See more" class="prod-butt" ></a></div>
+        </div>
+        <br>
+        <div class="gallery-heading"><p>The sun is shining and we are still sipping.</p></div><br>
+        <div class="gallery-container">
+            <div class="items d1"><input type="submit" value="CARAMEL ROAD"></div>
+            <div class="items d2"><input type="submit" value="FREEMARK ABBEY"></div>
+            <div class="items d3"><input type="submit" value="MURPHY-GOODE"></div>
+            <div class="items d4"><input type="submit" value="COPAIN"></div>
+            <div class="items d5"><input type="submit" value="FREEMARK ABBEY"></div>
+            <div class="items d6"><input type="submit" value="NIELSON"></div>
+        </div>
+        <br>
+    </main>
+    <footer>  
+    <div class="mainfooter">
+    <div class="footer" id="footer">
+        <div class="first">
+            <p><b>COPAIN WINERY</b><br><br>7800 Eastside Road <br>Healdsburg CA 95448 <br><br>707.836.8822 <br>customerserice@copainwines.com</p><br>
+            <i class="fab fa-instagram sym"></i>
+            <i class="fab fa-facebook sym"></i>
+            <i class="fab fa-youtube sym"></i>
+            <i class="fab fa-twitter sym"></i>
+        </div>
+        <div class="second">
+            <p>ABOUT US</p>
+            <a href="">Contact</a><br><br>
+            <a href="">Press</a><br><br>
+            <a href="">Trade</a><br><br>
+            <a href="">Donations</a><br><br>
+            <a href="">Shipping Policy</a><br><br>
+            <a href="">FAQ's</a>
+        </div>
+        <div class="third">
+            <p>EXPLORE</p>
+            <a href="">Blog</a><br><br>
+            <a href="">Events</a><br><br>
+            <a href="">Visit</a><br><br>
+            <a href="">Store Locator</a><br><br>
+            <a href="">Careers</a>
+        </div>
+        <div class="fourth">
+            <p><b>STAY CONNECTED</b></p>
+            <P>Subscribe to our newsletter for staying updated with <br>Copain wines, further releases and events.</P>
+            <input type="text" placeholder="Enter Email Address *" class="text"><br><br>
+            <input type="submit" value="SUBSCRIBE" class="submit">
+        </div>
+        <br>
+    </div>
+        <hr size="2" >
+        <br>
+        <div class="end">
+            <a href="">Privacy Policy</a>
+            <a href="">Cookie Policy</a>
+            <a href="">Compliance</a>
+            <a href="">Terms of Service</a>
+            <a href="">Accessbility</a>
+            <a href="">Sitemap</a>
+            <a href="" style="margin-left: 120px; text-decoration: none;">MURPHY.GOODE WINERY.GEYSERVILLE.CA</a>
+            
+        </div>
+    </div>
+</footer>  
+</body>
+</html>

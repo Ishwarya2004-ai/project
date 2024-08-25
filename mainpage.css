@@ -1,0 +1,319 @@
+.header{
+    background-color: maroon;
+    height: 65px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 2%;
+}
+.header img{
+    margin-top: 3.5%;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 25%;
+}
+.header p{    
+    color: aliceblue;
+    margin-left: 10%;
+    max-width: max-content;
+    margin-top: 4%;
+    font-size: x-large;
+}
+.search{
+    color: aliceblue;
+    margin-top: 1%;
+    margin-left: 30%;
+}
+.icons{
+    margin-top: 1%;
+    color: aliceblue;
+    display: flex;
+    gap: 5px;
+}
+.footer{
+    background-color: maroon;
+    display: flex;
+    color: aliceblue;
+    font-size: 17px;
+    flex-wrap: wrap;
+}
+.first{
+    margin-top: 30px;
+    margin-left: 5%;
+}
+.first b{
+    font-family: 'Times New Roman', Times, serif;
+}
+.sym{
+    padding-left: 10px;
+}
+ .second{
+    margin-left: 10%;
+    margin-top: 30px;    
+}
+.third{
+    margin-left: 10%;
+    margin-top: 30px;    
+} 
+.mainfooter a{
+    color: aliceblue;
+}
+.fourth{
+    margin-left: 10%;
+    margin-top: 30px;
+}
+.mainfooter{
+    background-color: maroon;
+    max-height: max-content;
+    padding-bottom: 10px;
+    color: aliceblue;
+}
+hr{
+    color: aliceblue;
+    margin-left: 90px;
+    width: 1350px;
+}
+.end{
+    display: inline;
+    margin-left: 40px;
+   
+}
+.end a{
+    padding-left: 50px;
+    
+}
+.end p{
+    color: aliceblue;
+    float: right;
+}
+.menu{
+    background-color: maroon;
+    height: 60px;
+    display: flex;
+    font-size: 30px;
+    justify-content: flex-end;
+}
+.menu a{
+    text-decoration: none;
+    padding:0px 15px;
+    color: aliceblue;
+}
+a:hover{
+    color:hotpink
+}
+.container-slideshow{
+    
+    position: relative;
+    max-width: 60rem;
+    margin: 0 auto;
+}
+.slider{
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+.slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+}
+.slider-nav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: aliceblue;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+    border-radius: 50%;
+}
+.slider-nav a:hover{
+    opacity: 1;
+}
+.shop-now{
+    margin:30px;
+}
+.shop-now .main-heading{
+    margin-left: 42%;
+    font-size: 40px;
+    color:maroon;
+    font-weight: bold;
+}
+.more-filters i,span{
+    color:maroon;
+    font-weight: bold;
+}
+.card {
+    height: 400px;
+   padding: 1rem;
+   border:1px solid maroon;
+   
+   }
+   .card img{
+    margin:auto;
+    justify-content: center;
+    padding: 10px;
+   }
+   .product-list {
+    
+   max-width: 1200px;
+   margin: 10px auto;
+   display: grid;
+   gap: 1rem;
+   background-repeat: no-repeat;
+   background-size: cover;
+   }
+   .images{
+    background-color: #FADADD;
+    display: flex;
+    align-items: center;
+    
+   }
+   .images img{
+        height: 200px;
+        background-color: #FADADD;
+   }
+   .price span{
+    padding:5px 0px 5px 5px;
+    float:right;
+   }
+   .product-type{
+    padding-top: 20px;
+
+   }
+   .product-name p {
+    font-family: Arial, Helvetica, sans-serif;
+    
+   }
+   .add-to-cart{
+        display: flex;
+        padding: 20px;
+   }
+   .count span{
+        padding: 15px;
+   }
+   .add-to-cart .cart button{
+        border: maroon;
+        padding: 5px;
+   }
+   .space hr{
+   width:500px;
+   }
+@media (min-width: 576px) {
+    .product-list { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (min-width: 768px) {
+    .product-list { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (min-width: 992px) {
+    .product-list { grid-template-columns: repeat(4, 1fr); }
+    }
+    .gallery-container{
+        display: flex;
+        gap: 20px;
+        margin-left: 9%;
+        margin-right: 9%;
+        flex-wrap: wrap;
+    }
+    .items{
+        height: 300px;
+        width: 300px;
+    }
+    .items input{
+        color: aliceblue;
+        background-color: maroon;
+        padding: 20px;
+        border: none;
+    }
+    .d1{
+        background-image: url("https://www.awesome11.com/wp-content/uploads/2019/05/Bordeaux-Wine.jpg");
+        background-size: 100% 100%;
+        align-content: end;
+        padding-bottom: 20px;
+        padding-left: 80px;
+    }
+    .d2{
+        grid-row: span 2;
+        background-image: url("https://cdn.pixabay.com/photo/2018/03/26/12/49/guardian-peak-winery-3262547_640.jpg");
+        background-size: 100% 100%;
+        align-content: end;
+        padding-bottom: 20px;
+        padding-left: 80px;
+        
+    }
+    .d3{
+        background-image: url("https://cdn.pixabay.com/photo/2021/02/10/16/37/wine-6002736_640.jpg");
+        background-size: 100% 100%;
+        align-content: end;
+        padding-bottom: 20px;
+        padding-left: 80px;
+    }
+    .d4{
+        grid-row: span 2;
+        background-image: url("https://cdn.pixabay.com/photo/2021/03/29/18/29/wine-6134904_640.jpg");
+        background-size: 100% 100%;
+        align-content: end;
+        padding-bottom: 20px;
+        padding-left: 80px;
+    }
+    .d5{
+        background-image: url("https://www.liquor.com/thmb/p-obVQqfD529bLGLtnpe2NCs6fM=/2121x1414/filters:fill(auto,1)/GettyImages-843630694-13ab0d8e3f1f4b38b2271ee22be6d137.jpg");   
+        background-size: 100% 100%;
+        align-content: end;
+        padding-bottom: 20px;
+        padding-left: 80px;
+    }
+    .d6{
+        background-image: url("https://silveroak.com/wp-content/uploads/2020/04/custom-wedding-bottles-scaled.jpg");
+        background-size: 100% 100%;
+        align-content: end;
+        padding-bottom: 20px;
+        padding-left: 80px;
+    }
+    .gallery-heading{
+        color: maroon;
+        font-size: 60px;
+        margin-left: 10%;
+        font-weight: bold;
+    }
+    .prod-butt{
+        padding: 20px;
+        background-color: maroon;
+        color: aliceblue;
+        width: 250px;
+        margin-left: 40%;
+        font-size: 20px;
+        border-radius: 5px;
+    }
+    .product-heading{
+        color:maroon;
+        font-size: 40px;
+        margin-left: 35%;
+        font-weight: bold;
+    }
+    .fourth .text{
+        padding: 10px; 
+        width: 300px; 
+        background: none; 
+        border: 2px solid aliceblue; 
+        color: aliceblue;
+        height: 30px;
+    }
+    .fourth .submit{
+        padding: 5px;
+        width: 150px; 
+        background: none; 
+        border: 2px solid aliceblue; 
+        color: aliceblue;
+        height: 30px;
+    }
