@@ -1,0 +1,72 @@
+.footer{
+    background-color: maroon;
+    display: flex;
+    color: aliceblue;
+    font-size: 17px;
+    flex-wrap: wrap;
+}
+.first{
+    margin-top: 30px;
+    margin-left: 5%;
+}
+.first b{
+    font-family: 'Times New Roman', Times, serif;
+}
+.sym{
+    padding-left: 10px;
+}
+ .second{
+    margin-left: 10%;
+    margin-top: 30px;    
+}
+.third{
+    margin-left: 10%;
+    margin-top: 30px;    
+} 
+.mainfooter a{
+    color: aliceblue;
+}
+.fourth{
+    margin-left: 10%;
+    margin-top: 30px;
+}
+.mainfooter{
+    background-color: maroon;
+    max-height: max-content;
+    padding-bottom: 10px;
+    color: aliceblue;
+}
+hr{
+    color: aliceblue;
+    margin-left: 90px;
+    width: 1350px;
+}
+.end{
+    display: inline;
+    margin-left: 40px;
+   
+}
+.end a{
+    padding-left: 50px;
+    
+}
+.end p{
+    color: aliceblue;
+    float: right;
+}
+.fourth .text{
+    padding: 10px; 
+    width: 300px; 
+    background: none; 
+    border: 2px solid aliceblue; 
+    color: aliceblue;
+    height: 30px;
+}
+.fourth .submit{
+    padding: 5px;
+    width: 150px; 
+    background: none; 
+    border: 2px solid aliceblue; 
+    color: aliceblue;
+    height: 30px;
+}
